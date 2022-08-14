@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import { Link, useRouteMatch } from "react-router-dom";
 import {
-  FaFacebookF,
   FaTwitter,
   FaInstagram,
   FaYoutube,
