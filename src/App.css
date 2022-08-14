@@ -36,3 +36,7 @@
     transform: rotate(360deg);
   }
 }
+
+.profil-photo {
+  max-width: 100px !important;
+}
