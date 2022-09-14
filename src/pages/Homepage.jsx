@@ -52,9 +52,9 @@ function Homepage() {
         </section>
       </Element>
 
-      <Element name="section-funfacts">
+      {/* <Element name="section-funfacts">
         <Funfacts />
-      </Element>
+      </Element> */}
 
       <Element name="section-services">
         <section className="shadow-blue white-bg padding">
@@ -63,19 +63,19 @@ function Homepage() {
         </section>
       </Element>
 
-      <Element name="section-portfolios">
+      {/* <Element name="section-portfolios">
         <section className="shadow-blue white-bg padding">
           <SectionHeading title="Portfolio" />
           <Portfolios />
         </section>
-      </Element>
+      </Element> */}
 
-      <Element name="section-testimonials">
+      {/* <Element name="section-testimonials">
         <section className="shadow-blue white-bg padding">
           <SectionHeading title="Testimonials" />
           <Testimonials />
         </section>
-      </Element>
+      </Element> */}
 
       <Element name="section-blogs">
         <section className="shadow-blue white-bg padding">
@@ -88,6 +88,13 @@ function Homepage() {
         <section className="shadow-blue white-bg padding">
           <SectionHeading title="Get in touch" />
           <Contact />
+        </section>
+      </Element>
+
+      <Element name="section-copyright">
+        <section className="shadow-blue white-bg padding">
+          <SectionHeading title="Copyright" />
+          &copy; {new Date().getFullYear()} Created by <a href="https://www.github.com/4ydogan" target="blank">4ydogan</a> - Mustafa Aydoğan - Tüm hakları saklıdır.
         </section>
       </Element>
     </Layout>

@@ -5,37 +5,37 @@ const servicesData = [
   {
     id: 1,
     name: "Development",
-    content: "Lorem ipsum dolor sit amet consectetuer elit.",
+    content: "We develop your dream website.",
     icon: "icon-globe",
   },
   {
     id: 2,
     name: "Design",
-    content: "Lorem ipsum dolor sit amet consectetuer elit.",
+    content: "We design all the designs you need.",
     icon: "icon-chemistry",
   },
   {
     id: 3,
     name: "Advertising",
-    content: "Lorem ipsum dolor sit amet consectetuer elit.",
+    content: "We can help with advertising and marketing.",
     icon: "icon-directions",
   },
   {
     id: 4,
     name: "SEO",
-    content: "Lorem ipsum dolor sit amet consectetuer elit.",
+    content: "We provide services in all SEO operations.",
     icon: "icon-rocket",
   },
   {
     id: 5,
     name: "Copy Write",
-    content: "Lorem ipsum dolor sit amet consectetuer elit.",
+    content: "We do your trademark registration and copyright.",
     icon: "icon-note",
   },
   {
     id: 6,
     name: "Support",
-    content: "Lorem ipsum dolor sit amet consectetuer elit.",
+    content: "We provide all kinds of consultancy services.",
     icon: "icon-bubbles",
   },
 ];

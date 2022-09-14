@@ -1,3 +1,4 @@
+import { Button } from "bootstrap";
 import React from "react";
 import { Link as ScrollLink } from "react-scroll";
 
@@ -19,17 +20,13 @@ function Herosection() {
           <span className="dot"></span>
         </h1>
         <p className="mb-4">{herosectionData.aboutMe}</p>
-        <ScrollLink
-          activeClass="active"
-          to="section-portfolios"
-          spy={true}
-          smooth={true}
-          duration={500}
-          offset={50}
+        <a
+          href="https://github.com/4ydogan"
           className="btn btn-default btn-lg mr-3"
+          target="_blank"
         >
           <i className="icon-grid"></i>View Portfolio
-        </ScrollLink>
+        </a>
         <div
           className="spacer d-md-none d-lg-none d-sm-none"
           data-height="10"

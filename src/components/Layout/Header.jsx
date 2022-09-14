@@ -33,8 +33,8 @@ function Header({ toggleHeader, toggleHandler }) {
       <div
         className={
           toggleHeader
-            ? "mobile-header py-2 px-3 mt-4 push"
-            : "mobile-header py-2 px-3 mt-4"
+            ? "mobile-header py-2 px-3 mt-4 push "
+            : "mobile-header py-2 px-3 mt-4 fixed"
         }
       >
         <button className="menu-icon mr-2" onClick={toggleHandler}>
@@ -149,7 +149,7 @@ function Header({ toggleHeader, toggleHandler }) {
                   </Link>
                 )}
               </li>
-              <li>
+              {/* <li>
                 {currentPath === "/" ? (
                   <ScrollLink
                     activeClass="active"
@@ -166,7 +166,7 @@ function Header({ toggleHeader, toggleHandler }) {
                     <i className="icon-grid"></i>Works
                   </Link>
                 )}
-              </li>
+              </li> */}
               <li>
                 {currentPath === "/" ? (
                   <ScrollLink
