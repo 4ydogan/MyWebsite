@@ -1,4 +1,4 @@
-Demo site: https://mustafa-aydogan.herokuapp.com/
+Demo site: https://mustafa-aydogan.netlify.app/
 
 Available Scripts
 In the project directory, you can run:
