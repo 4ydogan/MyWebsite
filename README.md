@@ -1,4 +1,4 @@
-Demo site: https://mustafaaydogan.com.tr
+Demo site: http://mustafaaydogan.com.tr
 
 Available Scripts
 In the project directory, you can run:
