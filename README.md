@@ -1,4 +1,4 @@
-Demo site: https://mustafa-aydogan.netlify.app/
+Demo site: https://mustafaaydogan.com.tr
 
 Available Scripts
 In the project directory, you can run:
