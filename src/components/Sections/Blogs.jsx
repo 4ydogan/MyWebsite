@@ -1,47 +1,44 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Blog from "../Items/Blog";
+import { useState } from "react";
+import { useEffect } from "react";
+import axios from "axios";
 
-const blogsData = [
-  {
-    id: 1,
-    title: "The Truth About Design In 3 Minutes",
-    category: "Thoughts",
-    featureImage: "images/blog/1.jpg",
-    date: "13 March, 2021",
-    author: "Bako Doe",
-    slug: "the-truth-about-design",
-  },
-  {
-    id: 2,
-    title: "The Ugly Truth About Design",
-    category: "Blog",
-    featureImage: "images/blog/2.jpg",
-    date: "13 March, 2021",
-    author: "Bako Doe",
-    slug: "the-ugly-truth-about-design",
-  },
-  {
-    id: 3,
-    title: "How To Become Better With UI Design",
-    category: "Thoughts",
-    featureImage: "images/blog/3.jpg",
-    date: "13 March, 2021",
-    author: "Bako Doe",
-    slug: "how-to-become-better-with-ui-design",
-  },
-];
+const Blogs = () => {
+  const [posts, setPosts] = useState([]);
+  const [postsPerPage] = useState(6);
 
-function Blogs() {
+  const mediumApiUrl = "https://api.rss2json.com/v1/api.json?rss_url=";
+  const mediumProfileUrl = "https://medium.com/feed/@mustafa-aydogan";
+
+  useEffect(() => {
+    const url = mediumApiUrl + mediumProfileUrl;
+    axios.get(url).then((data) =>
+      setPosts(
+        data?.data?.items?.map((blog, i) => {
+          blog.id = blog.guid.substring(blog.guid.indexOf("p/") + 2);
+          blog.pubDate = blog.pubDate.substring(0,10)
+
+          return blog;
+        })
+      )
+    );
+  }, []);
+
   return (
     <>
-      <div className="row">
-        {blogsData.map((blog) => (
-          <div className="col-md-4" key={blog.id}>
-            <Blog blog={blog} />
-          </div>
-        ))}
-      </div>
+      <ul>
+        {posts.map((blog, i) => {
+          if (i < postsPerPage) {
+            return (
+              <li key={blog.id}>
+                <Blog blog={blog} />
+              </li>
+            );
+          }
+        })}
+      </ul>
       <div className="spacer" data-height="50"></div>
       <div className="text-center">
         <Link to="/blogs" className="btn btn-default">
@@ -50,6 +47,6 @@ function Blogs() {
       </div>
     </>
   );
-}
+};
 
 export default Blogs;

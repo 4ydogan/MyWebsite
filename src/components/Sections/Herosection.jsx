@@ -5,7 +5,7 @@ import { Link as ScrollLink } from "react-scroll";
 const herosectionData = {
   name: "Mustafa Aydoğan",
   aboutMe:
-    "I am Mustafa Aydogan. I am a computer science student at TOBB ETU. I like working programming, data structures and algorithm analyze.",
+    "I am Mustafa Aydoğan, a web developer located in Ankara, Türkiye, presently pursuing a degree in computer science at TOBB ETU. My passion lies in the intricate realms of programming, data structures, and algorithm analysis. Explore my portfolio on GitHub to see my work.",
 };
 
 function Herosection() {

@@ -32,6 +32,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -41,16 +42,18 @@
   max-width: 100px !important;
 }
 
-.top-to-btm{
+.top-to-btm {
   position: relative;
 }
-.icon-position{
+
+.icon-position {
   position: fixed;
   bottom: 40px;
   right: 25px;
   z-index: 20;
 }
-.icon-style{
+
+.icon-style {
   background-color: #551B54;
   border: 2px solid #fff;
   border-radius: 50%;
@@ -61,26 +64,46 @@
   animation: movebtn 3s ease-in-out infinite;
   transition: all .5s ease-in-out;
 }
-.icon-style:hover{
+
+.icon-style:hover {
   animation: none;
   background: #fff;
   color: #551B54;
   border: 2px solid #551B54;
 }
+
 @keyframes movebtn {
-  0%{
+  0% {
     transform: translateY(0px);
   }
-  25%{
+
+  25% {
     transform: translateY(20px);
   }
-  50%{
+
+  50% {
     transform: translateY(0px);
   }
-  75%{
+
+  75% {
     transform: translateY(-20px);
   }
-  100%{
+
+  100% {
     transform: translateY(0px);
   }
+}
+
+.blog-thumb {
+  aspect-ratio: 4 / 3;
+  height: 100%;
+}
+
+.blog-image {
+  aspect-ratio: 6/10;
+  height: 100%;
+}
+
+.section-padding {
+  padding: 60px 50px;
 }

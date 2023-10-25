@@ -9,7 +9,7 @@ const aboutData = {
   birthday: "14 August, 1990",
   email: "mustafaaydogan12@outlook.com",
   aboutMe:
-    "I am Mustafa Aydoğan, web developer from Ankara, Türkiye. I have rich experience in web site design and building and customization.",
+    "I'm Mustafa Aydoğan, a web developer based in Ankara, Türkiye, currently studying computer science at TOBB ETU. With expertise in PHP, Docker, Kubernetes, TypeScript, Java, and C, I'm committed to making your web development dreams come true. I offer professional web design, development, advertising, marketing, SEO, copyright, and consulting services. Explore my blogs on encryption, machine learning, and React app development. Let's work together to realize your digital goals.",
 };
 
 function About() {
@@ -26,18 +26,18 @@ function About() {
             <p className="mb-2">
               Name: <span className="text-dark">{aboutData.name}</span>
             </p>
-            <p className="mb-0">
+            {/* <p className="mb-0">
               Birthday: <span className="text-dark">{aboutData.birthday}</span>
-            </p>
+            </p> */}
             <br />
             <a href={aboutData.cvpath} className="btn btn-default mr-3">
               <i className="icon-cloud-download"></i>Download CV
             </a>
           </div>
           <div className="col-md-7 mt-2 mt-md-0 mt-sm-2">
-            <p className="mb-2">
+            {/* <p className="mb-2">
               Location: <span className="text-dark">{aboutData.location}</span>
-            </p>
+            </p> */}
             <p className="mb-0">
               Email: <span className="text-dark">{aboutData.email}</span>
             </p>

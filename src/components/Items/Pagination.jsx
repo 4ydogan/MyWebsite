@@ -20,7 +20,7 @@ function Pagination({ itemsPerPage, totalItems, paginate, currentPage }) {
         {pageNumbers.map((number) => (
           <li
             key={number}
-            className={currentPage === number ? "is-active" : null}
+            className={currentPage === number ? "active-page" : null}
           >
             <a onClick={(e) => paginate(e, number)} href="!#">
               {number}

@@ -7,6 +7,7 @@ import {
   FaYoutube,
   FaDribbble,
   FaGithub,
+  FaMediumM,
 } from "react-icons/fa";
 
 const headerData = {
@@ -17,6 +18,7 @@ const headerData = {
     github: "https://github.com/4ydogan",
     twitter: "https://twitter.com",
     instagram: "https://www.instagram.com/",
+    medium: "https://mustafa-aydogan.medium.com/",
   },
 };
 
@@ -67,7 +69,11 @@ function Header({ toggleHeader, toggleHandler }) {
         </button>
         <div className="header-inner d-flex align-items-start flex-column">
           <Link to="/">
-            <img src={headerData.imageThumb} alt={headerData.name} className="profil-photo" />
+            <img
+              src={headerData.imageThumb}
+              alt={headerData.name}
+              className="profil-photo"
+            />
           </Link>
           <Link to="/" className="site-title mt-3">
             {headerData.name}
@@ -110,6 +116,42 @@ function Header({ toggleHeader, toggleHandler }) {
                 ) : (
                   <Link to="/">
                     <i className="icon-user"></i>About
+                  </Link>
+                )}
+              </li>
+              <li>
+                {currentPath === "/" ? (
+                  <ScrollLink
+                    activeClass="active"
+                    to="section-skills"
+                    spy={true}
+                    smooth={true}
+                    offset={-50}
+                    duration={500}
+                  >
+                    <i className="icon-puzzle"></i>Skills
+                  </ScrollLink>
+                ) : (
+                  <Link to="/">
+                    <i className="icon-puzzle"></i>Skills
+                  </Link>
+                )}
+              </li>
+              <li>
+                {currentPath === "/" ? (
+                  <ScrollLink
+                    activeClass="active"
+                    to="section-experiences"
+                    spy={true}
+                    smooth={true}
+                    offset={-50}
+                    duration={500}
+                  >
+                    <i className="icon-organization"></i>Experience
+                  </ScrollLink>
+                ) : (
+                  <Link to="/">
+                    <i className="icon-organization"></i>Experience
                   </Link>
                 )}
               </li>
@@ -215,6 +257,13 @@ function Header({ toggleHeader, toggleHandler }) {
                   </a>
                 </li>
               )}
+              {!headerData.social.medium ? null : (
+                <li className="list-inline-item">
+                  <a href={headerData.social.medium}>
+                    <FaMediumM />
+                  </a>
+                </li>
+              )}
               {!headerData.social.twitter ? null : (
                 <li className="list-inline-item">
                   <a href={headerData.social.twitter}>
@@ -229,9 +278,9 @@ function Header({ toggleHeader, toggleHandler }) {
                   </a>
                 </li>
               )}
-              {!headerData.social.youtue ? null : (
+              {!headerData.social.youtube ? null : (
                 <li className="list-inline-item">
-                  <a href={headerData.social.youtue}>
+                  <a href={headerData.social.youtube}>
                     <FaYoutube />
                   </a>
                 </li>
@@ -246,7 +295,10 @@ function Header({ toggleHeader, toggleHandler }) {
             </ul>
 
             <span className="copyright">
-              &copy; {new Date().getFullYear()} Created by <a href="https://www.github.com/4ydogan" target="blank">4ydogan</a>
+              &copy; {new Date().getFullYear()} Created by{" "}
+              <a href="https://www.github.com/4ydogan" target="blank">
+                4ydogan
+              </a>
             </span>
           </div>
         </div>

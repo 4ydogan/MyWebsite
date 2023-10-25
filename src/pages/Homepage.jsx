@@ -79,7 +79,7 @@ function Homepage() {
 
       <Element name="section-blogs">
         <section className="shadow-blue white-bg padding">
-          <SectionHeading title="Recent posts" />
+          <SectionHeading title="Recent Blogs" />
           <Blogs />
         </section>
       </Element>
