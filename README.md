@@ -1,4 +1,4 @@
-Demo site: https://mustafa-aydogan.herokuapp.com/
+Demo site: http://mustafaaydogan.com.tr
 
 Available Scripts
 In the project directory, you can run:
